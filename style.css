@@ -1,0 +1,688 @@
+/* Announcements Section */
+.announcements-section {
+	background: #e9eef6;
+	color: #1e3c72;
+	padding: 18px 0 10px 0;
+	text-align: center;
+	border-bottom: 2px solid #2a5298;
+}
+.announcements-container {
+  text-align: center;       /* center everything inside */
+}
+
+.announcements-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 12px;
+  text-align: center;       /* center title */
+}
+
+.announcements-list {
+  list-style: circle;         /* bullet style */
+  margin: 0;
+  padding: 0;
+  text-align: center;       /* center list items */
+}
+
+.announcements-list li::before {
+  content: "📢";        /* megaphone emoji */
+  margin-right: 8px;    /* space between icon and text */
+  font-size: 1.1rem;    /* adjust size if needed */
+}
+
+/* Header Flex Layout for Logo Left */
+.header-flex {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* logo stays left */
+  gap: 24px;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: left; /* default alignment */
+}
+
+.header-content h1 {
+  text-align: center;
+  margin: 10px 0;
+  font-size: 2.4rem;
+  color: #fff;
+}
+
+
+/* School Photo Section */
+.school-photo-section {
+	max-width: 780px;
+	background: #fff;
+	padding: 0;
+	margin: 0 auto 20px auto;
+	text-align: center;
+}
+.school-photo {
+	width: 100%;
+	height: auto;
+	max-height: 400px;
+	object-fit: cover;
+	display: block;
+}
+/* School Administrator Section */
+.admin-section {
+	margin-bottom: 40px;
+}
+.admin-container {
+	display: flex;
+	align-items: center;
+	gap: 24px;
+}
+.admin-photo {
+	width: 120px;
+	height: 120px;
+	object-fit: cover;
+	border-radius: 50%;
+	border: 3px solid #2a5298;
+	background: #fff;
+}
+.admin-info {
+	flex: 1;
+}
+.admin-info h3 {
+	margin: 0 0 8px 0;
+	color: #2a5298;
+}
+header h1 {
+	color: #fff;
+}
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	background: #f4f6f8;
+	color: #222;
+}
+
+.top-nav {
+  background-color: #2a5298;
+  padding: 12px 20px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.top-nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-start; /* aligns items to the left */
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.top-nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.top-nav ul li a:hover {
+  color: #ffd700;
+}
+
+/* Welcome section with background image */
+.welcome {
+  background: url('banner.jpg') center/cover no-repeat;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 130px 60px;
+  min-height: 250px;
+  position: relative;
+}
+
+.welcome::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4); /* overlay for readability */
+}
+
+.welcome * {
+  position: relative;
+  z-index: 1;
+}
+
+.welcome_message {
+  font-size: 3rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.theme-message {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #f1f1ed;
+  margin-top: 15px;
+  font-style: italic;
+  text-align: center;
+  max-width: 700px;
+}
+
+/* Header container */
+header {
+  background: linear-gradient(to right, #2a5298, #1e3c72); /* subtle gradient */
+  padding: 20px 30px;
+  color: white;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  border-bottom: 3px solid #ffd700;
+}
+
+/* Logo and title alignment */
+header .header-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+/* Logo styling */
+header .school-logo {
+  height: 60px;
+  width: auto;
+}
+
+/* Title styling */
+header h1, header h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+/* Navigation links */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  padding: 0;
+  margin-top: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #ffd700;
+}
+
+main {
+	max-width: 800px;
+	margin: 30px auto;
+	background: #fff;
+	padding: 30px;
+	border-radius: 8px;
+	box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
+
+section {
+	margin-bottom: 40px;
+}
+
+h1, h2 {
+	color: #2a5298;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+	margin-top: 15px;
+}
+
+input, select, button {
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	font-size: 1em;
+}
+
+button {
+	background: #2a5298;
+	color: #fff;
+	border: none;
+	cursor: pointer;
+	transition: background 0.2s;
+}
+
+button:hover {
+	background: #1e3c72;
+}
+
+#formMessage {
+	margin-top: 10px;
+	color: #2a5298;
+	font-weight: bold;
+}
+
+footer {
+  background-color: #2a5298;
+  color: #fff;
+  width: 100%;
+  padding: 20px 5%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center; /* ✅ Add this */
+}
+
+footer p,
+footer a,
+footer span {
+  margin: 5px 0;
+  text-align: center; /* ✅ Add this */
+  width: 100%;
+}
+
+footer p,
+footer span,
+footer a {
+  display: block;
+  margin: 5px 0;
+  text-align: center;
+}
+
+/* Mission, Vision, Quality Policy Section */
+.mvq-container {
+	display: flex;
+	justify-content: space-between;
+	gap: 20px;
+	margin-bottom: 40px;
+}
+.mvq-box {
+	flex: 1;
+	background: #e9eef6;
+	border-radius: 8px;
+	padding: 20px;
+	box-shadow: 0 1px 4px rgba(42,82,152,0.07);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+.mvq-box h3 {
+	color: #2a5298;
+	margin-bottom: 10px;
+}
+
+/*Spacing Adjustments*/
+	#about p {
+        text-indent: 2em;   /* Indent first line */
+        line-height: 2;     /* Double spacing */
+        margin-bottom: 1em; /* Extra space between paragraphs */
+    }
+	#administrator p {
+		text-indent: 2em;   /* Indent first line */
+		line-height: 2;     /* Double spacing */
+		margin-bottom: 1em; /* Extra space between paragraphs */
+	}
+
+/* Responsive fixes */
+.header-flex,
+.admin-container,
+.mvq-container {
+  flex-wrap: wrap;
+}
+
+/* --- Header --- */
+.header-flex {
+  display: flex;
+  flex-direction: column; /* stack logo + content */
+  align-items: center;    /* center horizontally */
+  justify-content: center;
+  text-align: center;     /* center text inside */
+}
+
+.header-content {
+  width: 100%;
+  text-align: center;
+}
+
+.welcome-message {
+  text-align: center;
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+/* --- Announcements --- */
+.announcements-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;    /* center the title + list */
+  justify-content: center;
+  text-align: center;
+}
+
+.announcements-title {
+  text-align: center;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.announcements-list {
+  list-style: none;       /* optional: remove bullets */
+  padding: 0;
+  margin: 0;
+  text-align: center;     /* center list items */
+}
+
+/* Section and title */
+#achievements {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.sort-controls {
+  text-align: center;
+  margin: 20px 0;
+}
+
+#sort-select {
+  padding: 6px 12px;
+  border-radius: 4px;
+  border: 1px solid #2a5298;
+  font-size: 1rem;
+}
+
+#achievements h2 {
+  font-size: 2rem;
+  color: #2a5298;
+  text-align: center;
+  background: linear-gradient(to right, #fff 30%, #ffd700 50%, #fff 70%);
+  background-size: 100% 6px;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  padding-bottom: 10px;
+  margin-bottom: 30px;
+}
+
+/* Achievement containers */
+.achievement-container {
+  background: #fff;
+  border: 2px solid #2a5298;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 700px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+/* Images */
+.achievement-photo {
+  width: 80%;
+  max-width: 350px;
+  height: auto;
+  border-radius: 6px;
+  margin: 0 auto 15px auto ;
+  display: block;
+}
+
+/* Details block */
+.achievement-details {
+  margin-top: 10px;
+}
+
+/* Pull-down button */
+.pull-button {
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+  margin: 0 auto 10px auto;
+  background: #2a5298;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+  list-style: none; /* removes default triangle marker */
+}
+.pull-button::before {
+  content: "▼";
+  color: #fff;
+  font-size: 1.2rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.achievement-details[open] .pull-button::before {
+  content: "▲";
+}
+
+/* Toggle logic: short shows by default, hides when open; full is opposite */
+.short-text {
+  display: block;
+  font-size: 1rem;
+  color: #555;
+}
+.full-text {
+  display: none;
+  margin-top: 10px;
+  font-size: 0.95rem;
+  color: #333;
+}
+.achievement-details[open] .short-text {
+  display: none;
+}
+.achievement-details[open] .full-text {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  /* General font scaling */
+  body,
+  h1, h2, h3, h4, h5, h6,
+  p, li, a, span {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  nav a {
+    font-size: 0.85rem !important;
+  }
+
+  /* Header layout */
+  .header-flex {
+    flex-direction: column;   /* stack logo + content */
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .school-logo {
+    margin: 0 auto 10px auto; /* center logo on mobile */
+  }
+
+  .header-content {
+    width: 100%;
+    text-align: center;
+  }
+
+  nav ul {
+    display: flex !important;
+    flex-direction: row !important;     /* ✅ keep links horizontal */
+    justify-content: center !important; /* ✅ center them */
+    align-items: center !important;
+    gap: 15px;
+    flex-wrap: wrap;                    /* ✅ allow wrapping if screen is narrow */
+    padding: 0;
+    margin: 0;
+  }
+
+  nav li {
+    display: inline-flex !important;    /* ✅ prevent stacking */
+  }
+
+  nav a {
+    font-size: 0.9rem;
+    text-align: center;
+  }
+
+  /* Headings */
+  .welcome-message {
+  font-size: 1.rem !important;        /* ✅ scaled down for mobile */
+  line-height: 1.4 !important;       /* ✅ tighter spacing */
+  text-align: center !important;
+  margin: 5px auto 10px auto !important;
+  width: 100% !important;
+  display: block !important;
+  font-weight: bold !important;
+}
+
+  .announcements-title {
+    font-size: 1.1rem;
+    text-align: center !important;
+    margin: 0 auto 10px auto;
+    width: 100%;
+    display: block;
+  }
+
+  .announcements-list li {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    text-align: center !important; /* ✅ center list items */
+  }
+
+  /* MVQ section */
+  .mvq-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .mvq-box {
+    width: 90%;
+    max-width: 600px;
+    margin: 0 auto 20px auto;
+    text-align: center;
+  }
+
+  /* Admin section */
+  .admin-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .admin-info {
+    width: 90%;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .admin-photo {
+    margin: 0 auto 15px auto;
+  }
+
+  /* Announcements container */
+  .announcements-container {
+    width: 90%;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  /* Footer */
+  footer {
+    font-size: 0.8rem !important;
+    padding: 15px 5% !important;
+    text-align: center !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+
+  footer p,
+  footer a,
+  footer span {
+    font-size: 0.85rem !important;
+    line-height: 1.6 !important;
+    text-align: center !important; /* ✅ enforce centering */
+    margin: 5px 0;
+    width: 100%;
+    display: block;
+  }
+
+ .achievement-container {
+    max-width: 90%;
+  }
+  .achievement-photo {
+    max-width: 100%;
+  }
+
+  /* Keep "Want to enroll" and Contact left-aligned */
+  #admission,
+  #contact {
+    text-align: left;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  #admission h2,
+  #contact h2 {
+    text-align: left;
+  }
+
+  #formMessage {
+    font-size: 0.95rem;
+  }
+
+.school-logo {
+    width: 60px;
+    height: 60px;
+  }
+
+  .welcome {
+    padding: 50px 15px;
+    min-height: 200px;
+  }
+
+  .welcome_message {
+    font-size: 2.2rem;
+  }
+
+  .theme-message {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .welcome {
+    padding: 40px 10px;
+    min-height: 180px;
+  }
+
+  .school_logo {
+    width: 50px;
+    height: 50px;
+  }
+
+  .welcome_message {
+    font-size: 1.8rem;
+  }
+
+  .theme-message {
+    font-size: 1.1rem;
+  }
+}
+

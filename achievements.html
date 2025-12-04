@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Achievements - MRDA ACI Portal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+  <!-- Top navigation bar -->
+  <nav class="top-nav">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="achievements.html">Achievements</a></li>
+    </ul>
+  </nav>
+
+  <!-- Welcome section with logo and message -->
+  <div class="welcome"> 
+    <h1 class="welcome_message">MRDA Academic Center Inc.</h1>
+    <p class="theme-message">
+        Moving Forward For A Better Tomorrow
+    </p>
+  </div>
+</header>
+
+  <main>
+    <section id="achievements">
+  <h2>Our Achievements</h2>
+
+<div class="sort-controls">
+  <label for="sort-select">Sort Achievements:</label>
+  <select id="sort-select">
+    <option value="newest">Newest to Oldest</option>
+    <option value="oldest">Oldest to Newest</option>
+  </select>
+</div>
+
+  <div class="achievement-container" data-date="2025-11-20">
+    <img src="partner.jpg" alt="Academic Excellence" class="achievement-photo">
+    <h3>TVL/TLE Training Partnership at SDO Naga City!</h3>
+
+    <details class="achievement-details">
+      <summary class="pull-button"></summary>
+      <p class="short-text">
+        Recognized for outstanding academic performance...
+      </p>
+      <p class="full-text">
+        MRDA Academic Center Inc. would like to extend its gratitude to Concepcion Pequena National High School from SDO Naga City for visiting our institution to discuss partnership in the Joint Delivery Voucher Program (JDVP) for the Academic Year 2025-2026.
+Many thanks to the Senior High School TVL/TVE Teachers and coordinators of CPNHS for these opportunities and trust. 
+Admiration for the hardworking School Administrator, Ms. Elaine Abarientos Daliva, and the Education Program Supervisors and Inspectorate Team from SDO Naga, for making this partnership a success and possible.
+      </p>
+    </details>
+  </div>
+
+  <div class="achievement-container" data-date="2025-09-11">
+    <img src="ai.jpg" alt="Sports Championship" class="achievement-photo">
+    <h3>Becoming AI - Smart School</h3>
+
+    <details class="achievement-details">
+      <summary class="pull-button"></summary>
+      <p class="short-text">
+        Blue Dragons won the inter-school basketball tournament...
+      </p>
+      <p class="full-text">
+        Gratitude to our stakeholders for your wonderful partnership for the AI - SMART School Program.  The MRDA ACI community is excited for this. 
+Many thanks po for choosing our institution.
+      </p>
+    </details>
+  </div>
+
+  <div class="achievement-container" data-date="2025-09-4">
+    <img src="marpost.jpg" alt="Sports Championship" class="achievement-photo">
+    <h3>From Mentor to Researcher: Maam Patricia Elopre at LLICON 2025</h3>
+
+    <details class="achievement-details">
+      <summary class="pull-button"></summary>
+      <p class="short-text">
+        Blue Dragons won the inter-school basketball tournament...
+      </p>
+      <p class="full-text">
+       In every classroom she enters, Ma’am Patricia Mae Elopre—known to many simply as Ma’am Pat—often stands as the quiet yet formidable force in English and research. Her students describe her as the kind of mentor who reads not just their work, but also between the lines, pushing them to think sharper, write clearer, and build stronger foundations for their academic pursuits. For years, she has guided budding researchers with a steady hand and an even steadier intellect. But this time, the spotlight shifts. At the Language and Literature International Conference (LLICON) 2025, Ma’am Pat herself stepped forward—not just as a mentor, but as a researcher. Together with her professor and fellow scholar, Dr. Jesus Cyril Conde, she presented their paper titled “Colonial Discourse in Istoryang Suanoy Oral Narrative Tradition from Mt. Asog, Camarines Sur, Philippines.” The presentation took place on Day 2, Track 1: Language, Literature, and History Teaching, where scholars, educators, and language enthusiasts gathered to exchange critical insights. For someone long known as a meticulous critic of research, seeing Ma’am Pat embody the role of presenter and co-author reveals a deeper truth: that the best teachers never stop learning, questioning, and contributing. This achievement is not only a testament to her academic discipline but also to her humility—to continue venturing into scholarship alongside those she once looked up to. Gratitude was extended to Dr. Conde for his mentorship, and to the Bicol Association of Language and Literature Teachers (BALLT) for providing the platform where voices like Ma’am Pat’s could resonate beyond the classroom. The event was held September 4–6, 2025 at Ateneo de Naga University, under the auspices of MRDA ACI—a gathering where knowledge does not just stay within the four walls of a room, but ripples outward into communities and cultures. Quiet, sharp, and relentless in her pursuit of knowledge, Ma’am Patricia Mae Elopre reminds us that brilliance speaks loudest not in volume, but in impact.
+      </p>
+    </details>
+  </div>
+
+<div class="achievement-container" data-date="2025-09-06">
+    <img src="pat.jpg" alt="Sports Championship" class="achievement-photo">
+    <h3>Research. "Colonial Discourse in Istoryang Suanoy Oral Narraitve Tradition from MT. Asog, Camarines Sur, Philippines.</h3>
+
+    <details class="achievement-details">
+      <summary class="pull-button"></summary>
+      <p class="short-text">
+        Blue Dragons won the inter-school basketball tournament...
+      </p>
+      <p class="full-text">
+        The MRDA ACI would like to extend its admiration and salute to our College Coordinator, Ma'am Patricia Mae F. Elopre, for her exemplary performance as Research Presenter during the 2025 Language and Literature International Conference (LLICON)  held from September 4-6, 2025, at Ateneo de Naga University.
+      </p>
+    </details>
+  </div>
+
+</section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 MRDA Academic Center Inc.</p>
+    <p>All rights reserved.</p>
+  </footer>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const sortSelect = document.getElementById("sort-select");
+  const achievementsSection = document.getElementById("achievements");
+
+  sortSelect.addEventListener("change", function() {
+    const sortOrder = this.value;
+    const achievements = achievementsSection.querySelectorAll(".achievement-container");
+    const achievementsArray = Array.from(achievements);
+
+    achievementsArray.sort((a, b) => {
+      const dateA = new Date(a.getAttribute("data-date"));
+      const dateB = new Date(b.getAttribute("data-date"));
+      return sortOrder === "newest" ? dateB - dateA : dateA - dateB;
+    });
+
+    achievementsArray.forEach(item => achievementsSection.appendChild(item));
+  });
+});
+</script>
+
+</body>
+</html>
